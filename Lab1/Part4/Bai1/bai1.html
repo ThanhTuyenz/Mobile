@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess My Number!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: #eee;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .number {
+      font-size: 6rem;
+      width: 15rem;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #eee;
+      color: #222;
+    }
+    .message {
+      font-size: 2rem;
+      margin: 20px 0;
+    }
+    .score, .label {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+    .guess {
+      font-size: 2rem;
+      padding: 10px;
+      width: 4rem;
+      text-align: center;
+      margin: 20px;
+    }
+    .btn {
+      font-size: 2rem;
+      padding: 10px 20px;
+      margin: 20px;
+      border: none;
+      background-color: #eee;
+      color: #222;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Guess My Number!</h1>
+  <p class="message">Start guessing...</p>
+  <p class="score">Score: <span class="score-value">20</span></p>
+
+  <input type="number" class="guess" />
+
+  <button class="btn check">Check!</button>
+  <button class="btn again">Again!</button>
+
+  <div class="number">?</div>
+
+  <script src="bai1.js"></script>
+</body>
+</html>
