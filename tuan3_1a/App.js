@@ -1,14 +1,9 @@
 import { Text, Image, StyleSheet, View, Pressable } from 'react-native';
 
-import { LinearGradient } from 'expo-linear-gradient';
+
 
 export default function a() {
   return (
-    <LinearGradient
-      colors={['#C7F4F7', '#D1F4F6', '#E5F4F5', '#00CCF9']}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 0, y: 1 }}
-      style={styles.container}>
     <View style={styles.container}>
       <View style={styles.topSection}>
         <Image source={require('./assets/Ellipse1circle.svg')} />
@@ -34,13 +29,13 @@ export default function a() {
         <Text style={styles.additionalText}>HOW WE WORK?</Text>
       </View>
     </View>
-    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#00CCF9',
   },
   topSection: {
     flex:2,
